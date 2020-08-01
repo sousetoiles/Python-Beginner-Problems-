@@ -1,0 +1,16 @@
+import random
+
+n = random.randint(1,20)
+print("I am thinking of a number between 1 and 20")
+
+running = True
+while running:
+    guess_str = input("Take a guess ")
+    guess = int(guess_str)
+    if guess == n:
+        print("Well done! That is right!")
+        running = False
+    elif guess < n:
+        print("Guess a bigger number")
+    else:
+        print("Guess a smaller number")
